@@ -23,13 +23,13 @@ Things you may want to cover:
 
 * ...
 
-## groups_usersテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
+|email|string|null: false|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+
+## 
