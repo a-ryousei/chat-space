@@ -32,4 +32,9 @@ Things you may want to cover:
 
 ### Association
 
-## 
+## groupテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|member|string|null: false|
