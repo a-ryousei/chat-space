@@ -32,9 +32,15 @@ Things you may want to cover:
 
 ### Association
 
-## groupテーブル
+has_many :groups
+
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |member|string|null: false|
+
+### Association
+
+has_many :users
