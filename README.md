@@ -40,7 +40,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group＿name|string|null: false|
+|group＿name|string|null: false, unique :true|
 
 ### Association
 
@@ -65,8 +65,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text|
+|image|string|
 |group_id|integer|null: false, foreign_key: true||
 |user_id|integer|null: false, foreign_key: true|
 
