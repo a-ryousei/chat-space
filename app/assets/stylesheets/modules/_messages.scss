@@ -5,6 +5,11 @@
 .wrapper{
   display: flex;
 }
+
+a{
+  color: #ffffff;
+}
+
 .Side{
   width: 300px;
   background-color: #253141;
@@ -32,7 +37,6 @@
   }
 
   .setup__btn{
-    color:#ffffff;
     padding-left: 5px;
     display: inline-block;
     text-decoration: none;
