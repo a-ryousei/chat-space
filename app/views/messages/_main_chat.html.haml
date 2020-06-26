@@ -1,0 +1,39 @@
+.Main
+  .Main__header
+    .Main__header__left-box
+      .Main__header__left-box__name
+        test
+      .Main__header__left-box__list
+        Member:masa
+    .Main__header__edit
+      =link_to "#", class: "edit-btn" do
+        Edit
+  .Main__message
+    .Main__message__info
+      .Main__message__info__name
+        masa
+      .Main__message__info__time
+        2019/11/20(Wed)17:43:01
+    .Main__message__text
+      おはよう！
+    .Main__message__info
+      .Main__message__info__name
+        masa
+      .Main__message__info__time
+        2019/11/20(Wed)17:46:39
+    .Main__message__text
+      今日は夜から雨
+  .Main__form
+    = form_with do |form|
+      .Main__form__send
+        .Main__form__send__message
+          .Main__form__send__message__text
+            = form.text_field :message, class: 'text', placeholder: "type a message"
+            .Main__form__send__message__text__image
+              .Main__form__send__message__text__image__icon
+                %label{class: "input-box__image"}
+                = icon('fas', 'image')
+              .Main__form__send__message__text__image__file
+                %input{type: "file"}
+        .Main__form__send__btn
+          = form.submit 'Send', class: 'submit-btn'
