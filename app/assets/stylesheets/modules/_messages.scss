@@ -6,12 +6,12 @@
   display: flex;
 }
 
-a{
-  color: #ffffff;
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 5px;
-}
+// a{
+//   color: #ffffff;
+//   display: inline-block;
+//   text-decoration: none;
+//   padding-left: 5px;
+// }
 
 .Side{
   width: 300px;
@@ -32,6 +32,12 @@ a{
       &__setup{
         width: 60px;
         text-align: end;
+        a{
+          color: #ffffff;
+          display: inline-block;
+          text-decoration: none;
+          padding-left: 5px;
+        }
       }
       &__name{
         font-size: 16px;
@@ -48,6 +54,14 @@ a{
   &__group{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    a{
+      color: #ffffff;
+      text-decoration: none;
+      padding-left: 5px;
+    }
     &__name{
       padding: 20px 20px 5px 20px;
       font-size: 15px;
@@ -90,15 +104,24 @@ a{
       display: flex;
       align-items: center;
       justify-content: center;
+      a{
+        color: #38aef0;
+        text-decoration: none;
       .edit-btn{
         color: #38aef0;
         text-decoration: none;
+        }
       }
     }
   }
   
-  &__message{
+  .MessageBox{
     height: calc(100vh - 190px);
+    overflow: scroll;
+    background-color: #fafafa;
+  }
+  .Main__message{
+    
     background-color: #fafafa;
     &__info{
       display: flex;
